@@ -1,0 +1,245 @@
+:root{
+  --green: #27AE60;
+}
+
+*{
+  font-family: 'DM Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-shadow: border-box;
+  position: relative;
+  color: white;
+}
+body{
+  background: #171717;
+}
+
+nav{
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 15% 0 15%;
+  
+}
+
+nav a{
+  font-size: 0.85rem;
+  padding: 0 10px 0 10px;
+  font-weight: 300;
+}
+
+.logo{
+  font-size: 28px;
+  font-weight: 600;
+}
+
+
+section{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 15% 0 15%;
+}
+
+.header .container{
+  width: 50%;
+}
+
+.header .img{
+  width: 50%;
+}
+
+.header img{
+  width: 100%;
+  height: auto;
+}
+
+.green {
+  background: var(--green);
+  border: none!important;
+  margin-right: 5px ;
+}
+
+.btn{
+  padding: 10px 20px 10px 20px;
+  font-size: 0.7rem;
+  font-weight: medium;
+  border: solid white 1px;
+}
+
+.header .contBtn{
+  margin-top: 35px;
+  
+}
+
+.header h2{
+  font-weight: bold;
+  font-size: 48px;
+}
+
+
+.header h5{
+  font-weight: 100;
+  font-size: 16px;
+  color: gray;
+  
+}
+
+.about{
+  flex-direction: column;
+  text-align: center;
+}
+
+.about h2{
+  margin-bottom: 40px;
+  font-size: 48px;
+}
+
+.about p{
+  padding: 0 150px 0 150px;
+  font-weight: 100;
+}
+
+.about .container{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 100%;
+}
+
+.about .card{
+  width: 25%;
+  margin-top: 60px;
+  
+}
+
+.about .card h2{
+  padding: 0;
+  margin: 0;
+  font-size: 18px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.about .card h3{
+  text-align: center;
+  font-size: 14px;
+  font-weight: 200;
+}
+
+
+.about .card::before{
+  content: "";
+  background: var(--green);
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  display: block;
+  border: solid 20px#212121;
+  margin: auto;
+  margin-bottom: 15px;
+}
+
+.ido{
+  flex-direction: column;margin-top: 90px;
+}
+
+.ido .container{
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.ido .card{
+  display: flex;
+  flex-direction: column;
+  width: 33,3%;
+  background: #212121;
+  padding: 20px 50px 20px 50px;
+}
+
+
+.ido .card h3{
+  font-size: 36px;
+  color: #535353;
+}
+
+
+.ido h2{
+  margin-bottom: 90px;
+  font-size: 48px;
+}
+
+.ido .card .icon img{
+  width: 100%;
+  height: auto;
+}
+
+.ido .card .icon{
+  width: 50px;
+  height: auto;
+  margin: 10px 0 20px;
+}
+
+.ido .select{
+  box-shadow:  inset 0 -5px 0px 0 rgb(0, 156, 0);
+}
+
+.skills{
+  flex-direction: column;
+}
+
+.skills .container{
+  display: flex;
+  width: 80%;
+  justify-content: space-between;
+  background: #212121;
+  text-align: center;
+}
+
+.skills .card{
+  margin: auto;
+}
+
+
+@media (max-width: 1070px) {
+
+  .ido .card h3{
+    font-size: 20px;
+    
+  }
+  
+
+  .about p{
+    padding: 10px;
+    font-weight: 100;
+  }
+
+  .about .card{
+    width: 50%;
+    margin-top: 60px;
+    
+  }
+
+  .header{
+    display: block;
+    justify-content: center;
+    text-align: center;
+  }  
+
+  .header .container, .header .img{
+    width: 100%;
+    padding: 20px;
+  }
+
+  .header .contBtn{
+    margin-top: 35px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .ido .card{
+    width:90%;
+    margin-top: 15px;
+  }
+}
