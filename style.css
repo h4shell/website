@@ -4,6 +4,7 @@
 
 *{
   font-family: 'DM Sans', sans-serif;
+
   margin: 0;
   padding: 0;
   box-shadow: border-box;
@@ -18,6 +19,7 @@ nav{
   display: flex;
   justify-content: space-between;
   padding: 30px 15% 0 15%;
+  margin-bottom: 120px;
   
 }
 
@@ -38,6 +40,9 @@ section{
   align-items: center;
   justify-content: space-between;
   padding: 0 15% 0 15%;
+}
+.header{
+  margin-bottom: 110px;
 }
 
 .header .container{
@@ -87,23 +92,27 @@ section{
 .about{
   flex-direction: column;
   text-align: center;
+  margin-bottom: 150px;
 }
 
 .about h2{
-  margin-bottom: 40px;
+  margin-bottom: 80px;
   font-size: 48px;
 }
 
 .about p{
+  font-size: 18px;
   padding: 0 150px 0 150px;
-  font-weight: 100;
+  font-weight: 10;
+  width: 800px;
+  opacity: 0.8;
 }
 
 .about .container{
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  width: 100%;
+  width: 90%;
 }
 
 .about .card{
@@ -116,14 +125,18 @@ section{
   padding: 0;
   margin: 0;
   font-size: 18px;
-  font-weight: 400;
+  font-weight: 200;
   text-align: center;
+  font-weight: bold;
+  opacity: 0.8;
 }
 
 .about .card h3{
   text-align: center;
-  font-size: 14px;
-  font-weight: 200;
+  font-size: 18px;
+  font-weight: 100;
+  opacity: 0.8;
+  
 }
 
 
@@ -131,16 +144,17 @@ section{
   content: "";
   background: var(--green);
   border-radius: 50%;
-  width: 10px;
-  height: 10px;
+  width: 15px;
+  height: 15px;
   display: block;
-  border: solid 20px#212121;
+  border: solid 25px#212121;
   margin: auto;
   margin-bottom: 15px;
 }
 
 .ido{
   flex-direction: column;margin-top: 90px;
+  margin-bottom: 90px;
 }
 
 .ido .container{
@@ -187,6 +201,14 @@ section{
 
 .skills{
   flex-direction: column;
+  margin-bottom: 80px;
+}
+
+.skills h2{
+  margin: 90px;
+  font-size: 48px;
+  
+
 }
 
 .skills .container{
@@ -199,13 +221,42 @@ section{
 
 .skills .card{
   margin: auto;
+  padding: 60px 0 60px 0;
 }
 
+.skills .card h3{
+  font-size: 48px;
+  color: rgb(92, 92, 92);
+}
+
+.skills .card h6{
+ 
+  color: var(--green);
+  font-size: 24px;
+}
+
+footer{
+
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+footer h6{
+  font-size: 14px;
+  color: #535353;
+}
 
 @media (max-width: 1070px) {
+  .skills .container{
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
 
   .ido .card h3{
     font-size: 20px;
+    
     
   }
   
@@ -213,6 +264,8 @@ section{
   .about p{
     padding: 10px;
     font-weight: 100;
+    width: auto;
+    
   }
 
   .about .card{
