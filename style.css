@@ -420,6 +420,7 @@ input:focus, textarea:focus, select:focus{
     display: block;
     justify-content: center;
     text-align: center;
+    
   }
   
   .header .container{
@@ -487,6 +488,11 @@ input:focus, textarea:focus, select:focus{
 
 
 @media (max-width: 900px) {
+
+  .header{
+    padding: 5px;
+  }
+
   .skills{
     width: 90%;
     padding: 0px;
