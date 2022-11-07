@@ -29,10 +29,15 @@ body{
 }
 
 nav{
+  box-shadow: inset 0px -1px 0 rgb(36, 36, 36);
   display: flex;
   justify-content: space-between;
-  padding: 30px 15% 0 15%;
+  padding: 30px 15% 30px 15%;
   margin-bottom: 120px;
+  position: fixed;
+  width: 80%;
+  background: #171717;
+  z-index: 10;
   
 }
 
@@ -56,6 +61,7 @@ section{
 }
 .header{
   margin-bottom: 110px;
+  padding-top: 230px;
 }
 
 .header .container{
