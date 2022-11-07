@@ -2,6 +2,10 @@
   --green: #27AE60;
 }
 
+a{
+  text-decoration: none;
+}
+
 *{
   font-family: 'DM Sans', sans-serif;
 
@@ -69,6 +73,7 @@ section{
   font-size: 0.7rem;
   font-weight: medium;
   border: solid white 1px;
+  text-decoration: none;
 }
 
 .header .contBtn{
@@ -167,7 +172,7 @@ section{
 .ido .card{
   display: flex;
   flex-direction: column;
-  width: 33,3%;
+  min-width: 20%;
   background: #212121;
   padding: 20px 50px 20px 50px;
 }
@@ -238,7 +243,7 @@ section{
 footer{
 
   text-align: center;
-  padding-bottom: 50px;
+  padding: 150px 0 50px 0;
 }
 
 footer h6{
@@ -246,7 +251,92 @@ footer h6{
   color: #535353;
 }
 
+.contact{
+  flex-direction: column;
+  padding: 0;
+}
+
+.contact form{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact .container{
+  width: 50%;
+  
+}
+
+.contact input{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  background: none;
+  border: none;
+  box-shadow: 0 1px 0 rgb(109, 109, 109);
+  padding: 5px 0 5px 0;
+}
+
+.continput{
+  display: flex;
+  opacity: 0.8;
+
+}
+
+.contact .btn{
+  width: 80px;
+  margin: auto;
+  margin-top: 30px;
+  
+}
+
+textarea{
+  
+  height: 100px;
+  box-shadow: none;
+  border: solid 1px grey;
+  margin-top: 25px;
+  resize: none;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  background: none;
+  border: none;
+  border: solid grey 1px;
+  padding: 8px 0 8px 5px;
+
+}
+
+.contact h2{
+  margin: 90px;
+  font-size: 48px;
+  
+
+}
+
+input, textarea, select{
+  transition: 0.5s background ease-in-out;
+}
+
+input:focus, textarea:focus, select:focus{
+  outline: none;
+  background: black;
+}
+
+
 @media (max-width: 1070px) {
+
+  .skills .card{
+    width: 100%;
+    padding: 20px;
+  }
+
+  .contact .container{
+    width: 90%;
+  }
+
   .skills .container{
     margin: auto;
     display: flex;
@@ -269,7 +359,7 @@ footer h6{
   }
 
   .about .card{
-    width: 50%;
+    width: 100%;
     margin-top: 60px;
     
   }
@@ -278,21 +368,65 @@ footer h6{
     display: block;
     justify-content: center;
     text-align: center;
-  }  
+  }
+  
+  .header .container{
+    margin:auto;
+  }
 
   .header .container, .header .img{
-    width: 100%;
+    width: 80%;
     padding: 20px;
   }
 
   .header .contBtn{
     margin-top: 35px;
-    display: flex;
-    justify-content: center;
+    
   }
+
+  
 
   .ido .card{
     width:90%;
     margin-top: 15px;
+
+  
+    text-align: center;
+    display: flex;
+    justify-content: center;
+  }
+
+  .ido .icon{
+    margin: auto!important;
+    padding: 10px;
+  }
+
+  
+
+  .skills{
+    padding: 20px;
+  }
+
+
+
+  section{
+    margin: 5px;
+    padding: 0;;
+  }
+
+  .img{
+    margin: auto;
+  }
+
+  .contact h2, .skills h2{
+    text-align: center;
+  }
+
+  nav{
+    margin-bottom: 40px;
+  }
+
+  .header, .ido .skills{
+    margin-bottom: 40px;
   }
 }

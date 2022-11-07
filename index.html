@@ -21,9 +21,9 @@
     <nav>
       <div class="logo">PORTFOLIO</div>
       <div class="menu">
-        <a> About me </a>
-        <a> Services </a>
-        <a> Contact me </a>
+        <a href="#about"> About me </a>
+        <a href="#ido"> Services </a>
+        <a href="#contact">Contact me</a>
       </div>
     </nav>
 
@@ -36,8 +36,8 @@
 
         <h5>Frontend Developer</h5>
         <div class="contBtn">
-          <a class="btn green">Download CV</a>
-          <a class="btn">Learn More</a>
+          <a href="files/CV Fornara eng.pdf" class="btn green">Download CV</a>
+          <a class="btn" href="https://github.com/h4shell">Github Project</a>
         </div>
       </div>
       <div class="img">
@@ -45,7 +45,7 @@
       </div>
     </section>
 
-    <section class="about">
+    <section id="about" class="about">
       <h2>About</h2>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -58,24 +58,24 @@
       <div class="container">
         <div class="card">
           <h2>Full Name</h2>
-          <h3>Your Name goes here</h3>
+          <h3>Lorenzo Fornara</h3>
         </div>
         <div class="card">
           <h2>Email Address</h2>
-          <h3>Your email goes here</h3>
+          <h3><a href="mailto:fw1987@gmail.com">fw1987@gmail.com</a></h3>
         </div>
         <div class="card">
-          <h2>github</h2>
-          <h3>Your Github goes here</h3>
+          <h2>Telegram</h2>
+          <h3><a href="https://t.me/h4shell">@h4shell</a></h3>
         </div>
         <div class="card">
           <h2>Phone</h2>
-          <h3>Your phone goes here</h3>
+          <h3><a href="tel:+393481206604">+39 348 12 06 604</a></h3>
         </div>
       </div>
     </section>
 
-    <section class="ido">
+    <section class="ido" id="ido">
       <h2>What I do</h2>
       <div class="container">
         <div class="card">
@@ -92,7 +92,7 @@
             <img src="public/img/Vector2.png" alt="" />
           </div>
           <h3>
-            Software <br />
+            Web <br />
             Development
           </h3>
         </div>
@@ -102,7 +102,7 @@
           </div>
           <h3>
             Software <br />
-            Development
+            Design
           </h3>
         </div>
       </div>
@@ -127,6 +127,31 @@
           <h3>50%</h3>
           <h6>PHP</h6>
         </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <h2>Get in touch</h2>
+      <div class="container">
+        <form action="send">
+          <div class="continput">
+            <input type="text" name="name" for="name" placeholder="Name" />
+            <input type="text" name="email" for="email" placeholder="email" />
+          </div>
+          <div class="continput">
+            <input
+              type="text"
+              name="lastname"
+              for="lastname"
+              placeholder="Last name"
+            />
+            <input type="text" name="phone" for="phone" placeholder="phone" />
+          </div>
+          <div class="continput">
+            <textarea placeholder="Message"></textarea>
+          </div>
+          <button class="btn green">SEND</button>
+        </form>
       </div>
     </section>
     <footer>
