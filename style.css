@@ -110,7 +110,7 @@ section{
   padding: 0 150px 0 150px;
   font-weight: 10;
   width: 800px;
-  opacity: 0.8;
+  opacity: 0.6;
 }
 
 .about .container{
@@ -212,21 +212,21 @@ section{
 .skills h2{
   margin: 90px;
   font-size: 48px;
-  
-
 }
 
 .skills .container{
   display: flex;
   width: 80%;
   justify-content: space-between;
-  background: #212121;
   text-align: center;
 }
 
 .skills .card{
+  width: 33%;
   margin: auto;
   padding: 60px 0 60px 0;
+  background: #212121;
+  
 }
 
 .skills .card h3{
@@ -331,6 +331,7 @@ input:focus, textarea:focus, select:focus{
   .skills .card{
     width: 100%;
     padding: 20px;
+    margin: 10px;
   }
 
   .contact .container{
@@ -424,6 +425,7 @@ input:focus, textarea:focus, select:focus{
 
   nav{
     margin-bottom: 40px;
+    display: none;
   }
 
   .header, .ido .skills{
