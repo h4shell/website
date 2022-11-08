@@ -63,21 +63,30 @@ section{
   padding: 0 15% 0 15%;
 }
 .header{
-  margin-bottom: 110px;
+  margin-bottom: 250px;
   padding-top: 230px;
 }
 
 .header .container{
-  width: 50%;
+  width: 100%;
+  
+
+  
+  
 }
 
 .header .img{
-  width: 50%;
+  
+  width: 150%;
+  display: flex;
+  justify-content: center;
+  
 }
 
 .header img{
-  width: 100%;
+  width: clamp(50%, 60%, 100%);
   height: auto;
+  position: block;
 }
 
 .green {
