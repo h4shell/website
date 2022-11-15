@@ -23,7 +23,6 @@
       <div class="menu">
         <a href="#about"> About me </a>
         <a href="#ido"> Services </a>
-        <a href="#contact">Contact me</a>
       </div>
     </nav>
 
@@ -133,13 +132,63 @@
       </div>
     </section>
 
-    <section class="contact" id="contact">
+    <!-- Messenger Plug-in per la chat Code -->
+    <div id="fb-root"></div>
+
+    <!-- Your Plug-in per la chat code -->
+    <div id="fb-customer-chat" class="fb-customerchat"></div>
+
+    <script>
+      var chatbox = document.getElementById("fb-customer-chat");
+      chatbox.setAttribute("page_id", "111175751609924");
+      chatbox.setAttribute("attribution", "biz_inbox");
+    </script>
+
+    <!-- Your SDK code -->
+    <script>
+      window.fbAsyncInit = function () {
+        FB.init({
+          xfbml: true,
+          version: "v15.0",
+        });
+      };
+
+      (function (d, s, id) {
+        var js,
+          fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s);
+        js.id = id;
+        js.src = "https://connect.facebook.net/it_IT/sdk/xfbml.customerchat.js";
+        fjs.parentNode.insertBefore(js, fjs);
+      })(document, "script", "facebook-jssdk");
+    </script>
+
+    <!--
+      
+      <section class="contact" id="contact">
       <h2>Get in touch</h2>
       <div class="container">
-        <form action="send">
+        <form
+          action="https://h4sh.it/mail.php"
+          method="post"
+          novalidate="novalidate"
+        >
           <div class="continput">
-            <input type="text" name="name" for="name" placeholder="Name" />
-            <input type="text" name="email" for="email" placeholder="email" />
+            <input
+              type="text"
+              name="name"
+              for="name"
+              placeholder="Name"
+              disabled
+            />
+            <input
+              type="text"
+              name="email"
+              for="email"
+              placeholder="email"
+              disabled
+            />
           </div>
           <div class="continput">
             <input
@@ -151,12 +200,14 @@
             <input type="text" name="phone" for="phone" placeholder="phone" />
           </div>
           <div class="continput">
-            <textarea placeholder="Message"></textarea>
+            <textarea name="message" placeholder="Message"></textarea>
           </div>
-          <button class="btn green">SEND</button>
+          <button type="submit" class="btn green" disabled>SEND</button>
         </form>
       </div>
     </section>
+     
+  -->
     <footer>
       <h6>© h4shell 2022</h6>
     </footer>
