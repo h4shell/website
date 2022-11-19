@@ -2,6 +2,15 @@
   --green: #27AE60;
 }
 
+#particles-js{
+  position: fixed;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  opacity: 0.5;
+
+}
+
 
 
 a{
@@ -39,7 +48,7 @@ nav{
   margin-bottom: 120px;
   position: fixed;
   width: 80%;
-  background: #171717;
+  background: #171717e0;
   z-index: 10;
   
 }
